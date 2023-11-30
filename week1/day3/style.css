@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.parent{
+    background-color: grey;
+    width: 350px;
+    height: 200px;
+}
+.child1{
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+}
+.child2{
+    background-color: rgb(217, 255, 0);
+    width: 150px;
+    height: 150px;
+
+}

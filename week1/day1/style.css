@@ -1,0 +1,13 @@
+.rect{
+    display: inline-block;
+    width: 50px;
+    height: 100px;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
