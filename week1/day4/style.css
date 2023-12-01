@@ -44,4 +44,14 @@ a{
 a:hover{
     color: rgb(28, 135, 135);
     text-decoration: underline;
+    text-underline-offset: 1rem;
 }
+
+.logo{
+    font-size: 2rem;
+}
+
+.logo:hover {
+    cursor: default;
+}
+/* burger nav style */
