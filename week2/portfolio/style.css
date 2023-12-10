@@ -84,3 +84,131 @@ nav .navlinks li a{
     color: #fffffe;
     margin-right: 3rem;
 }
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.container .hero-pic{
+    width: 270x;
+    height: 270px;
+    border: 8px solid #ff8906;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 5px 7px 28px rgba(0,0,0,0,5);
+}
+
+.hero-pic img{
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.hero-pic img:hover{
+    transform: scale(1.1);
+}
+
+.hero-text{
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-text h5{
+    color: #fffffe;
+    font: 14px;
+}
+.hero-text h5 span{
+    color: #ff8906;
+    font-size: 16px;
+}
+.hero-text h1{
+    color: #ff8906;
+    font-size: 3rem;
+}
+.hero-text p{
+    color: #a7a9be;
+}
+
+.btn-container{
+    margin: 40px 0;
+}
+.btn-container .btn{
+    border-color: #a7a9be;
+    color: #fffffe;
+    background-color: #0f0e17;
+    padding: 12px 24px;
+    margin: 4px 0;
+    margin-right: 8px;
+    border-radius: 32px;
+    border: 2px solid #fffffe;
+}
+.btn.active{
+    background-color: #ff8906;
+}
+.hero-text .social i{
+    color: #fffffe;
+    font-size: 20px;
+    margin-right: 16px;
+    transition: 0.5s;
+}
+.hero-text .social i:hover{
+    color: #ff8906;
+}
+
+/* mediaquaries */
+@media(max-width:930px){
+    nav .togglebtn{
+        display: initial;
+    }
+    .click{
+        top: 45px;
+    }
+    .click span{
+        position: absolute;
+        margin-top: 12px;
+    }
+    .click span:first-child{
+        transform: (-40deg);
+    }
+    .click span:nth-child(2){
+        opacity: 0;
+        margin: 0;
+    }
+    .click span:last-child{
+        transform: rotate(45deg);
+        top: 0;
+    }
+    nav .navlinks{
+        position: absolute;
+        top: 120px;
+        right: 0;
+        bottom: 0;
+        width: 60%;
+        height: 100vh;
+        background-color: #0f0e17;
+        z-index: 3;
+    }
+    nav .navlinks li{
+        display: block;
+    }
+    nav .navlinks li a{
+        display: block;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    nav .navlinks.open{
+        right: 0;
+    }
+}
+@media(max-width:768px)
+{
+ .container{
+    flex-direction: column;
+    padding-top: 1.5rem;
+ }
+ .hero-text
+ padding: 40px 0px;
+}
