@@ -142,5 +142,13 @@ console.log(5 - "4")
 // Actual:1
 
 console.log(10 % 5)
-// Prediction:
+// Prediction:2
+// Actual:0
+
+console.log(5 % 10)
+// Prediction:0
+// Actual:5
+
+console.log("Java" + "Script")
+// Prediction:JavaScript
 // Actual:
