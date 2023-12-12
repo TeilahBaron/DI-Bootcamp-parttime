@@ -67,3 +67,80 @@
 
     
     // console.log(typeof 'potato')
+
+    // Exercise 5 : Guess The Answers #2
+
+    console.log(typeof(15))
+    // Prediction:Number
+    // Actual:number
+    
+    console.log(typeof(5.5))
+    // Prediction: number
+    // Actual:number
+    
+    console.log(typeof(NaN))
+    // Prediction:?
+    // Actual:number
+    
+    console.log(typeof("hello"))
+    // Prediction: string
+    // Actual:string
+    
+    console.log (typeof(true))
+    // Prediction:true
+    // Actual:boolean
+    
+    console.log(typeof(1 != 2))
+    // Prediction: boolean
+    // Actual:boolean
+    
+    console.log("hamburger" + "s")
+    // Prediction:hammburgers
+    // Actual:hammburgers
+    
+    console.log("hamburgers" - "s")
+    // Prediction:hamburger
+    // Actual:Nan
+    
+    console.log("1" + "3")
+    // Prediction:4
+    // Actual:  13
+  
+
+    console.log("johnny" + 5)
+// Prediction:johny5
+// Actual:ohny5
+
+console.log("johnny" - 5)
+// Prediction:nan
+// Actual:nan
+
+console.log(99 * "hello")
+// Prediction:99hello
+// Actual:nan
+
+console.log(1 != 1)
+// Prediction:1
+// Actual:false
+
+console.log(1 == "1")
+// Prediction:1
+// Actual:true
+
+console.log(1 === "1")
+// Prediction:true
+// Actual:false
+
+// Exercise 6 : Guess The Answers #3
+
+console.log(5 + "34")
+// Prediction:534
+// Actual:534
+
+console.log(5 - "4")
+// Prediction:1
+// Actual:1
+
+console.log(10 % 5)
+// Prediction:
+// Actual:
