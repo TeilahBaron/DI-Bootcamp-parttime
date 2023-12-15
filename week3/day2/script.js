@@ -169,22 +169,22 @@
 // Prediction:true
 // Actual:1
 
-console.log(false + true)
+//  console.log(false + true)
 // Prediction:0
 // Actual:1
 
-false - true
+// console.log(false - true)
 // Prediction:
-// Actual:
+// Actual:-1
 
-!true
-// Prediction:
-// Actual:
+// console.log(!true)
+// Prediction:false
+// Actual:false
 
-3 - 4
-// Prediction:
-// Actual:
+// console.log(3 - 4)
+// Prediction:-1
+// Actual:-1
 
-"Bob" - "bill"
-// Prediction:
-// Actual:
+console.log("Bob" - "bill")
+// Prediction:0
+// Actual:Nan
