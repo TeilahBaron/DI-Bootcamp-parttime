@@ -82,24 +82,46 @@
 // name_user1, name_user2 and 3 more are online
 
 
-let users = ["Lea123", "Princess45", "cat&doglovers", "helooo@000", "Diggy123"];
+// let users = ["Lea123", "Princess45", "cat&doglovers", "helooo@000", "Diggy123"];
 // console.log(users.length)
-let totalUsers= users.length - 2
+// let totalUsers= users.length - 2
 
 
-if(users.length <=3){
-switch (users.length){
-    case 0:
-    console.log("no one is online")
-    break;
-    case 1:
-        console.log(users[0] + "is online");
-    break;
-    case 2:
-        console.log(users[0]+ users[1]+ "are connected")    
+// if(users.length <=3){
+// switch (users.length){
+//     case 0:
+//     console.log("no one is online")
+//     break;
+//     case 1:
+//         console.log(users[0] + "is online");
+//     break;
+//     case 2:
+//         console.log(users[0]+ users[1]+ "are connected")    
+// }
+// }
+// else {
+//     console.log(users)
+//     console.log(users[0]+ "," + users[1]+ " " + "and"+ " " + totalUsers + " " + "are online")
+// }
+
+// Challenge
+
+let sentence ="The movie is not that bad, I like it";
+let wordNot= sentence.search("not")
+// console.log(wordNot)
+let wordBad= sentence.search("bad")
+// console.log(wordBad)
+// let sentenceFirst= sentence.slice(0,wordNot)
+// console.log(sentenceFirst)
+// let senetnceTwo= sentence.slice(wordBad+3)
+// console.log(senetnceTwo)
+// console.log(sentenceFirst + "good" + senetnceTwo)
+
+if( wordNot<wordBad){
+    let sentenceFirst= sentence.slice(0,wordNot)
+    let senetnceTwo= sentence.slice(wordBad+3)
+    console.log(sentenceFirst + "good" + senetnceTwo)
 }
-}
-else {
-    console.log(users)
-    console.log(users[0]+ "," + users[1]+ " " + "and"+ " " + totalUsers + " " + "are online")
+else{
+    console.log(sentence)
 }
