@@ -1,4 +1,4 @@
-// 🌟 Exercise 1 : Information
+//  Exercise 1 : Information
 // Instructions
 // Part I : function with no parameters
 
@@ -29,7 +29,7 @@
 // infoAboutPerson("Josh", 12, "yellow")
 
 
-// 🌟 Exercise 2 : Tips
+// Exercise 2 : Tips
 // Instructions
 // John created a simple tip calculator to help calculate how much to tip when he and his family go to restaurants.
 
@@ -59,7 +59,7 @@
 // }
 // calculateTip()
 
-// 🌟 Exercise 3 : Find The Numbers Divisible By 23
+// Exercise 3 : Find The Numbers Divisible By 23
 // Instructions
 // Create a function call isDivisible() that takes no parameter.
 
@@ -86,7 +86,7 @@
 // isDivisible()
 
 
-// 🌟 Exercise 4 : Shopping List
+// Exercise 4 : Shopping List
 // Instructions
 // const stock = { 
 //     "banana": 6, 
@@ -218,7 +218,7 @@
 // changeEnough(4.25, [25, 20, 5, 0])
 // changeEnough(14.11, [2,100,0,0])
 
-// 🌟 Exercise 6 : Vacations Costs
+// Exercise 6 : Vacations Costs
 // Instructions
 // Let’s create functions that calculate your vacation’s costs:
 
@@ -296,7 +296,7 @@
 //     if(dest === "Paris") return 380
 //     return 500
 
-}
+// }
 // rentalCarCost()
 
 // function rentalCarCost(){
@@ -329,5 +329,60 @@
 //     console.log("total price of vacation: ", totalPrice)
 // }
 // totalVacationCost()
+
+
+
+// Daily Challenge: Words In The Stars
+
+const answer = prompt("type few separated words");
+const words = answer.split(' ');
+
+// function log(word){
+//     console.log(word);
+// }
+
+// words.forEach(log)
+
+
+const lengthOfLongestWord = getLengthOfLongestWord();
+
+displayAllRows();
+
+function displayAllRows(){
+    const upperDownRow = createUpperDownRow();
+    console.log(upperDownRow);
+    for( const word of words){
+        displayWord(word);
+    }
+    console.log(displayAllRows)
+}
+
+function displayWord(word){
+    const spaces = lengthOfLongestWord - word.length + 1;
+    const empty = " ".repeat(spaces)
+    console.log("* "+ word + empty + "*") ;
+}
+
+function getLengthOfLongestWord(){
+    let lengthOfLongestWord = 0;
+    for (const word of words){
+        const wordLength = word.length;
+        if(wordLength > lengthOfLongestWord) {
+            lengthOfLongestWord = wordLength;
+        }
+    }
+    return lengthOfLongestWord;
+}
+
+function createUpperDownRow(){
+    const numberOfStarsOnOneRow = lengthOfLongestWord + 4;
+    let row = "";
+    for (let i = 0; i < numberOfStarsOnOneRow; i++)
+    {
+        row = row + "*"
+    }
+    return row
+}
+
 
 
