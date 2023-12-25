@@ -249,83 +249,85 @@
 
 // hotelCost()
 
-function hotelCost(){
+// function hotelCost(){
 
-   let answers
+//    let answers
 
-   while (!OnlyNumbers(answers)){
-   answers = prompt("how many nights you will stay?") 
-}
-   const numberOfNigts = Number(answers)
-   const costNight = 140
-   const totalPrice = numberOfNigts* costNight
-//    console.log("total cost of nights : ", totalPrice)
-   return totalPrice
+//    while (!OnlyNumbers(answers)){
+//    answers = prompt("how many nights you will stay?") 
+// }
+//    const numberOfNigts = Number(answers)
+//    const costNight = 140
+//    const totalPrice = numberOfNigts* costNight
+// //    console.log("total cost of nights : ", totalPrice)
+//    return totalPrice
   
-}
+// }
 
 
-function OnlyNumbers(str){
-    const regex = new RegExp(/^[0-9]*$/)
-    return regex.test(str)
-}
+// function OnlyNumbers(str){
+//     const regex = new RegExp(/^[0-9]*$/)
+//     return regex.test(str)
+// }
 
 
 
-function withNumbers(str){
-    const regex = new RegExp(/\d/)
-    return regex.test(str)
-}
+// function withNumbers(str){
+//     const regex = new RegExp(/\d/)
+//     return regex.test(str)
+// }
 
-const priceFlight = planeRideCost()
-// console.log("plane price: ", priceFlight)
+// const priceFlight = planeRideCost()
+// // console.log("plane price: ", priceFlight)
 
 
-function planeRideCost(){
+// function planeRideCost(){
 
-    let dest = ""
+//     let dest = ""
 
-     while(dest == "" || withNumbers(dest)){
-     dest = prompt("where are you go?")
-    }
+//      while(dest == "" || withNumbers(dest)){
+//      dest = prompt("where are you go?")
+//     }
     
-    // console.log ("you are going to ", dest)
+//     // console.log ("you are going to ", dest)
    
 
-    if(dest === "London") return 180
-    if(dest === "Paris") return 380
-    return 500
+//     if(dest === "London") return 180
+//     if(dest === "Paris") return 380
+//     return 500
 
 }
 // rentalCarCost()
 
-function rentalCarCost(){
-    let answers
+// function rentalCarCost(){
+//     let answers
 
-    while (!OnlyNumbers(answers)){
-    answers = prompt("how many days you will rent the car?") 
- }
- const dayPrice = 40
- const numberDays = Number(answers)
+//     while (!OnlyNumbers(answers)){
+//     answers = prompt("how many days you will rent the car?") 
+//  }
+//  const dayPrice = 40
+//  const numberDays = Number(answers)
 
- let discount = 0
- if (numberDays>= 10) discount = 0.05
- const totalPrice = dayPrice * numberDays * (1-discount)
-//  console.log("rent price is", totalPrice)
- return totalPrice
-}
+//  let discount = 0
+//  if (numberDays>= 10) discount = 0.05
+//  const totalPrice = dayPrice * numberDays * (1-discount)
+// //  console.log("rent price is", totalPrice)
+//  return totalPrice
+// }
 
-function totalVacationCost(){
-    const carPrice = rentalCarCost()
-    console.log("car costs: ", carPrice)
+// function totalVacationCost(){
+//     const carPrice = rentalCarCost()
+//     console.log("car costs: ", carPrice)
 
-    const nights = hotelCost()
-    console.log("hotel costs: ", nights)
+//     const nights = hotelCost()
+//     console.log("hotel costs: ", nights)
 
-    const priceFlight = planeRideCost()
-    console.log("Plane: ", priceFlight)
+//     const priceFlight = planeRideCost()
+//     console.log("Plane: ", priceFlight)
 
-    const totalPrice = carPrice + nights + priceFlight
-    console.log("total price of vacation: ", totalPrice)
-}
-totalVacationCost()
+//     const totalPrice = carPrice + nights + priceFlight
+//     console.log("total price of vacation: ", totalPrice)
+// }
+// totalVacationCost()
+
+
