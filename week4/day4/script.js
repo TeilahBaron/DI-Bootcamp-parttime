@@ -36,28 +36,63 @@
 
 // Exercise 3 : Change The Navbar
 
-const navbar = document.getElementById("navBar")
-console.log('navbar', navbar);
+// const navbar = document.getElementById("navBar")
+// console.log('navbar', navbar);
 
-navbar?.setAttribute("id", "socialNetworkNavigation")
+// navbar?.setAttribute("id", "socialNetworkNavigation")
 
-const li = document.createElement('li')
-console.log('li', li);
+// const li = document.createElement('li')
+// console.log('li', li);
 
-const logout = document.createTextNode("Logout")
-console.log('logout',logout);
+// const logout = document.createTextNode("Logout")
+// console.log('logout',logout);
 
-li.appendChild(logout)
-console.log('li', li);
+// li.appendChild(logout)
+// console.log('li', li);
 
-const ul = navbar?.firstElementChild
-ul?.appendChild(li)
+// const ul = navbar?.firstElementChild
+// ul?.appendChild(li)
 
-const firstLi = ul?.firstElementChild
-const lasttLi = ul?.lastElementChild
+// const firstLi = ul?.firstElementChild
+// const lasttLi = ul?.lastElementChild
 
-console.log('first li')
-console.log(firstLi.textContent)
+// console.log('first li')
+// console.log(firstLi.textContent)
 
-console.log('last li')
-console.log(lasttLi.textContent)
+// console.log('last li')
+// console.log(lasttLi.textContent)
+
+
+// Exercise 4 : My Book List
+
+const allBooks = []
+
+const book1 = {
+    title: "sunny Day",
+    author: "Some Author",
+    image: "https://picsum.photos/200",
+    alreadyRead: false
+}
+
+const book2 = {
+    title: "sunny Day2",
+    author: "Some Author New",
+    image: "https://picsum.photos/200",
+    alreadyRead: true
+}
+allBooks.push(book1, book2)
+console.log('my books', allBooks)
+
+const table = document.createElement("table")
+table.innerHTML =
+<thead>
+    <tr>
+        <th> My book list</th>
+    </tr>
+</thead>
+
+
+
+// console.log(table);
+const bookListDiv = document.querySelector(".list-books")
+bookListDiv?.appendChild(table)
