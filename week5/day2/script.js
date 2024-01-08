@@ -52,18 +52,53 @@
 
 // Exercise 2 : Work With Forms
 
-const form = document.querySelector("form");
-const button = document.getElementById("submit");
+// const form = document.querySelector("form");
+// const button = document.getElementById("submit");
 
-function logFormInput(e){
+// function logFormInput(e){
     
-    e.preventDefault();
-    const firstName = document.querySelector("[name=fname]").value;
-    const lastName = document.querySelector("[name=lname]").value;
-    console.log(firstName,lastName);
-    console.log("event", e);
-}
+//     e.preventDefault();
+//     const firstName = document.querySelector("[name = firstname]").value;
+//     const lastName = document.querySelector("[name = lastname]").value;
+//     console.log(firstName,lastName);
+//    if(firstName === "" || lastName === ""){
+//     alert("pleas fill all fiealds")
+//    } else{
+//     const ul = document.querySelector(".usersAnswer")
+//     const oneLi = document.createElement("li");
+//     const twoeLi = document.createElement("li");
+//     oneLi.innerText = firstName
+//     twoeLi.innerText = lastName
+//     ul.append(oneLi,twoeLi)
+   
+//    }
+// }
 
-button.addEventListener("click", logFormInput)
+// button.addEventListener("click", logFormInput)
 // console.log(form, firstName, lastName);
 // logFormInput()
+
+
+
+
+
+// Exercise 3 : Transform The Sentence
+
+let allBoldItems;
+function getBoldItems(){
+    allBoldItems = document.getElementsByName("strong");
+}
+
+function highlight(){
+    getBoldItems();
+    for (const boldItem of allBoldItems){
+        boldItem.style.color = "red";
+    }
+}
+
+function returnBack(){
+    getBoldItems();
+    for (const item of allBoldItems){
+        item.style.color = "black"
+    }
+}
