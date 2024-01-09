@@ -84,26 +84,45 @@
 
 // Exercise 3 : Transform The Sentence
 
-let allBoldItems;
-function getBoldItems(){
-    allBoldItems = document.getElementsByName("strong");
+// let allBoldItems;
+// function getBoldItems(){
+//     allBoldItems = document.getElementsByName("strong");
+// }
+
+// function highlight(){
+//     getBoldItems();
+//     for (const boldItem of allBoldItems){
+//         boldItem.style.color = "red";
+//     }
+// }
+
+// highlight()
+
+// function returnBack(){
+//     getBoldItems();
+//     for (const item of allBoldItems){
+//         item.style.color = "black"
+//     }
+// }
+
+// const paragraph = document.querySelector("p")
+// paragraph?.addEventListener("mouseover", highlight)
+
+
+
+// Exercice 4 : Volume Of A Sphere
+
+const form = document.getElementById("my-form");
+const radius = document.getElementById("radius")
+const volume = document.getElementById("volume")
+form.addEventListener("submit", submition);
+
+function submition(e){
+    e.preventDefault();
+    const r = Number(radius.value);
+    if(Number.isNaN(r)) return;
+    const vol = 4/3 * Math.PI * r ** 3;
+    // console.log("volume", vol);
+    volume.value = vol;
+
 }
-
-function highlight(){
-    getBoldItems();
-    for (const boldItem of allBoldItems){
-        boldItem.style.color = "red";
-    }
-}
-
-highlight()
-
-function returnBack(){
-    getBoldItems();
-    for (const item of allBoldItems){
-        item.style.color = "black"
-    }
-}
-
-const paragraph = document.querySelector("p")
-paragraph?.addEventListener("mouseover", highlight)
