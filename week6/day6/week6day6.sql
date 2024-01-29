@@ -1,1 +1,2 @@
-SELECT*FROM customers WHERE first_name != 'Scott';
+SELECT*FROM items;
+
