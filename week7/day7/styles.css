@@ -1,0 +1,39 @@
+.task-item {
+    border: 1px solid #ccc;
+    padding: 15px; /* Add padding */
+    margin-bottom: 20px; /* Add margin */
+    position: relative;
+}
+
+.task-header {
+    cursor: pointer;
+}
+
+.task-details {
+    margin-top: 10px;
+}
+
+.completed {
+    background-color: #a8f5a1; /* Green */
+}
+
+.expired {
+    background-color: #f8a1a1; /* Red */
+}
+
+.delete-btn,
+.edit-btn {
+    position: absolute;
+    top: 10px; /* Adjust position */
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.delete-btn {
+    right: 45px; /* Adjust position */
+}
+
+.edit-btn {
+    right: 10px; /* Adjust position */
+}
