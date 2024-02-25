@@ -1,0 +1,76 @@
+/* Styles for the body and background */
+body {
+    font-family: 'Press Start 2P', sans-serif; /* Sega logo font */
+    /* Other styles */
+    margin: 0;
+    padding: 0;
+    background-color: #007bff;
+    color: aliceblue;
+    background-image: url('bg2.png'); /* Set background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+/* Styles for the search form */
+.search-form {
+    margin: 10px;
+}
+
+.search-input {
+    width: 1200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style the search input placeholder */
+.search-input::placeholder {
+    color: #999;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #66afe9;
+    box-shadow: 0 0 5px #66afe9;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
