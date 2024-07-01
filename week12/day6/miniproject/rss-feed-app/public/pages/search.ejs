@@ -1,0 +1,30 @@
+<% include partials/head.ejs %>
+<% include partials/header.ejs %>
+
+<div class="container">
+  <h1>Search Posts</h1>
+  <form action="/search/title" method="POST">
+    <input type="text" name="title" placeholder="Search by title">
+    <button type="submit">Search</button>
+  </form>
+  <form action="/search/category" method="POST">
+    <select name="category">
+      <option value="category1">Category 1</option>
+      <option value="category2">Category 2</option>
+      <option value="category3">Category 3</option>
+      <!-- Add more options as needed -->
+    </select>
+    <button type="submit">Search</button>
+  </form>
+  <div class="search-results">
+    <% if (searchResults && searchResults.length > 0) { %>
+      <% include partials/posts.ejs with { posts: searchResults } %>
+    <% } else { %>
+      <p>No posts found.</p>
+    <% } %>
+  </div>
+</div>
+
+<% include partials/footer.ejs %>
+</body>
+</html>
